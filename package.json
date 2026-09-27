@@ -1,0 +1,26 @@
+{
+  "name": "omni-cli",
+  "version": "0.1.0",
+  "description": "Omni IDE - a mobile-first browser code editor and terminal that runs on localhost",
+  "type": "module",
+  "bin": {
+    "omni-ide": "bin/omni-ide.js"
+  },
+  "main": "server/index.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "test": "node --test test/"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@xterm/xterm": "^6.0.0",
+    "codemirror": "^5.65.21",
+    "express": "^5.2.1",
+    "mime-types": "^3.0.2",
+    "ws": "^8.22.0"
+  }
+}
